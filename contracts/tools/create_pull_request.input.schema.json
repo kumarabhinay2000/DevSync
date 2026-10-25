@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "proposalId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "approvalId": {
+      "type": "string",
+      "format": "uuid"
+    }
+  },
+  "required": [
+    "proposalId",
+    "approvalId"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:devsync:tool:create_pull_request:v1",
+  "title": "create_pull_request"
+}

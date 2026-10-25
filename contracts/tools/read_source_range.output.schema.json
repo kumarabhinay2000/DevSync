@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "path": {
+      "type": "string"
+    },
+    "commitSha": {
+      "type": "string"
+    },
+    "startLine": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "endLine": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "content": {
+      "type": "string",
+      "maxLength": 64000
+    },
+    "truncated": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "path",
+    "commitSha",
+    "startLine",
+    "endLine",
+    "content",
+    "truncated"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:devsync:tool-output:read_source_range:v1",
+  "title": "read_source_range normalized result"
+}

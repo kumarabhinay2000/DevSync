@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "jobId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "QUEUED",
+        "SUCCEEDED"
+      ]
+    },
+    "pullRequestUrl": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    }
+  },
+  "required": [
+    "jobId",
+    "status",
+    "pullRequestUrl"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:devsync:tool-output:create_pull_request:v1",
+  "title": "create_pull_request normalized result"
+}

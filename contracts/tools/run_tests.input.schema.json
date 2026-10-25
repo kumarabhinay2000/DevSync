@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "testProfileId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "proposalId": {
+      "type": "string",
+      "format": "uuid"
+    }
+  },
+  "required": [
+    "testProfileId",
+    "proposalId"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:devsync:tool:run_tests:v1",
+  "title": "run_tests"
+}

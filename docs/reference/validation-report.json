@@ -1,0 +1,55 @@
+{
+  "result": "passed",
+  "documentationBaselineDate": "2026-10-25",
+  "python": "3.11.9",
+  "validatorVersions": {
+    "openapi-spec-validator": "0.9.0",
+    "jsonschema": "4.26.0",
+    "grpcio-tools": "1.84.1",
+    "pglast": "8.7"
+  },
+  "checks": {
+    "markdown": {
+      "files": 32,
+      "localLinks": 110,
+      "fencesAndExplicitPlaceholders": "passed"
+    },
+    "openapi": {
+      "version": "1.0.0",
+      "operations": 56,
+      "result": "passed"
+    },
+    "jsonSchemas": {
+      "schemas": 22,
+      "positiveExamples": 8,
+      "negativeCases": 23,
+      "result": "passed"
+    },
+    "jsonParsing": {
+      "files": 31,
+      "result": "passed"
+    },
+    "protobuf": {
+      "files": 1,
+      "services": 2,
+      "methods": 6,
+      "result": "compiled"
+    },
+    "sql": {
+      "statements": 43,
+      "tables": 34,
+      "result": "syntax parsed; not applied to PostgreSQL"
+    },
+    "wireframes": {
+      "svgFiles": 3,
+      "result": "XML parsed"
+    }
+  },
+  "inventoriedFiles": 71,
+  "limitations": [
+    "No application implementation/tests were executed.",
+    "SQL was parsed, not migrated against PostgreSQL/pgvector.",
+    "SVG layout is static; browser/a11y verification is not claimed.",
+    "No cluster, provider contract, backup restore or production system was verified."
+  ]
+}

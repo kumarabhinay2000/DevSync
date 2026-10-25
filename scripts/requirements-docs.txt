@@ -1,0 +1,5 @@
+# Documentation validators only; application dependencies are separate.
+openapi-spec-validator==0.9.0
+jsonschema==4.26.0
+grpcio-tools==1.84.1
+pglast==8.7

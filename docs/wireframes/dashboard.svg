@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+<title id="title">Projects and indexing</title><desc id="desc">Static layout specification for DevSync AI. No controls are functional.</desc>
+<rect width="1280" height="800" fill="#F8FAFC"/>
+<rect width="1280" height="64" fill="#0F172A"/>
+<text x="24" y="40" fill="white" font-family="sans-serif" font-size="22">DevSync AI</text>
+<text x="250" y="40" fill="white" font-family="sans-serif" font-size="16">Projects and indexing</text>
+<rect x="0" y="64" width="220" height="736" fill="white" stroke="#CBD5E1"/>
+<text x="24" y="112" fill="#0F172A" font-family="sans-serif" font-size="16">Workspace</text>
+<text x="24" y="160" fill="#0F172A" font-family="sans-serif" font-size="16">Projects</text>
+<text x="24" y="208" fill="#0F172A" font-family="sans-serif" font-size="16">Overview</text>
+<text x="24" y="256" fill="#0F172A" font-family="sans-serif" font-size="16">Chat</text>
+<text x="24" y="304" fill="#0F172A" font-family="sans-serif" font-size="16">Jobs</text>
+<text x="24" y="352" fill="#0F172A" font-family="sans-serif" font-size="16">Findings (later)</text>
+<text x="24" y="400" fill="#0F172A" font-family="sans-serif" font-size="16">Settings</text>
+<rect x="244" y="88" width="1012" height="90" rx="8" fill="white" stroke="#CBD5E1"/>
+<text x="264" y="122" fill="#0F172A" font-family="sans-serif" font-size="19">Workspace projects</text>
+<text x="264" y="158" fill="#475569" font-family="sans-serif" font-size="14">Connect repository (permission required) | Search projects</text>
+<rect x="244" y="202" width="490" height="230" rx="8" fill="white" stroke="#CBD5E1"/>
+<text x="264" y="236" fill="#0F172A" font-family="sans-serif" font-size="19">Example repository</text>
+<text x="264" y="272" fill="#475569" font-family="sans-serif" font-size="14">Branch: main | Indexed commit: illustrative SHA</text>
+<text x="264" y="302" fill="#475569" font-family="sans-serif" font-size="14">Status: Ready</text>
+<text x="264" y="332" fill="#475569" font-family="sans-serif" font-size="14">Open repository chat | View indexing history</text>
+<rect x="758" y="202" width="498" height="230" rx="8" fill="white" stroke="#CBD5E1"/>
+<text x="778" y="236" fill="#0F172A" font-family="sans-serif" font-size="19">Indexing activity</text>
+<text x="778" y="272" fill="#475569" font-family="sans-serif" font-size="14">Queued / Running / Completed / Failed</text>
+<text x="778" y="302" fill="#475569" font-family="sans-serif" font-size="14">Show actual stage and attempt count</text>
+<text x="778" y="332" fill="#475569" font-family="sans-serif" font-size="14">No estimated percentage without measured work</text>
+<rect x="244" y="456" width="1012" height="280" rx="8" fill="white" stroke="#CBD5E1"/>
+<text x="264" y="490" fill="#0F172A" font-family="sans-serif" font-size="19">Empty, error and permission states</text>
+<text x="264" y="526" fill="#475569" font-family="sans-serif" font-size="14">No repositories: explain connection flow</text>
+<text x="264" y="556" fill="#475569" font-family="sans-serif" font-size="14">Forbidden action: keep private source hidden</text>
+<text x="264" y="586" fill="#475569" font-family="sans-serif" font-size="14">Provider failure: sanitized message + request ID</text>
+<text x="264" y="616" fill="#475569" font-family="sans-serif" font-size="14">Mobile: stack cards and collapse navigation</text>
+<text x="244" y="780" fill="#475569" font-family="sans-serif" font-size="13">Wireframe specification — illustrative data — no live service</text>
+</svg>

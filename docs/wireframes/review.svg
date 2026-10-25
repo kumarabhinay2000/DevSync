@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+<title id="title">Change proposal review — later release</title><desc id="desc">Static layout specification for DevSync AI. No controls are functional.</desc>
+<rect width="1280" height="800" fill="#F8FAFC"/>
+<rect width="1280" height="64" fill="#0F172A"/>
+<text x="24" y="40" fill="white" font-family="sans-serif" font-size="22">DevSync AI</text>
+<text x="250" y="40" fill="white" font-family="sans-serif" font-size="16">Change proposal review — later release</text>
+<rect x="0" y="64" width="220" height="736" fill="white" stroke="#CBD5E1"/>
+<text x="24" y="112" fill="#0F172A" font-family="sans-serif" font-size="16">Workspace</text>
+<text x="24" y="160" fill="#0F172A" font-family="sans-serif" font-size="16">Projects</text>
+<text x="24" y="208" fill="#0F172A" font-family="sans-serif" font-size="16">Overview</text>
+<text x="24" y="256" fill="#0F172A" font-family="sans-serif" font-size="16">Chat</text>
+<text x="24" y="304" fill="#0F172A" font-family="sans-serif" font-size="16">Jobs</text>
+<text x="24" y="352" fill="#0F172A" font-family="sans-serif" font-size="16">Findings (later)</text>
+<text x="24" y="400" fill="#0F172A" font-family="sans-serif" font-size="16">Settings</text>
+<rect x="244" y="88" width="1012" height="104" rx="8" fill="white" stroke="#CBD5E1"/>
+<text x="264" y="122" fill="#0F172A" font-family="sans-serif" font-size="19">Proposal identity</text>
+<text x="264" y="158" fill="#475569" font-family="sans-serif" font-size="14">Repository | exact base SHA | patch SHA-256 | approval expiration</text>
+<rect x="244" y="216" width="656" height="420" rx="8" fill="white" stroke="#CBD5E1"/>
+<text x="264" y="250" fill="#0F172A" font-family="sans-serif" font-size="19">Diff viewer</text>
+<text x="264" y="286" fill="#475569" font-family="sans-serif" font-size="14">Changed files and exact unified diff</text>
+<text x="264" y="316" fill="#475569" font-family="sans-serif" font-size="14">Additions and deletions labelled beyond color</text>
+<text x="264" y="346" fill="#475569" font-family="sans-serif" font-size="14">Read-only proposed patch; no automatic merge</text>
+<rect x="924" y="216" width="332" height="420" rx="8" fill="white" stroke="#CBD5E1"/>
+<text x="944" y="250" fill="#0F172A" font-family="sans-serif" font-size="19">Verification and approval</text>
+<text x="944" y="286" fill="#475569" font-family="sans-serif" font-size="14">Tests: PASS / FAIL / ERROR</text>
+<text x="944" y="316" fill="#475569" font-family="sans-serif" font-size="14">Static findings summary</text>
+<text x="944" y="346" fill="#475569" font-family="sans-serif" font-size="14">Explicit approve or reject</text>
+<text x="944" y="376" fill="#475569" font-family="sans-serif" font-size="14">Changed hash invalidates approval</text>
+<text x="944" y="406" fill="#475569" font-family="sans-serif" font-size="14">Create PR: separate write grant</text>
+<rect x="244" y="660" width="1012" height="92" rx="8" fill="white" stroke="#CBD5E1"/>
+<text x="264" y="694" fill="#0F172A" font-family="sans-serif" font-size="19">Audit history</text>
+<text x="264" y="730" fill="#475569" font-family="sans-serif" font-size="14">Actor, action, patch hash, time, sanitized outcome</text>
+<text x="244" y="780" fill="#475569" font-family="sans-serif" font-size="13">Wireframe specification — illustrative data — no live service</text>
+</svg>

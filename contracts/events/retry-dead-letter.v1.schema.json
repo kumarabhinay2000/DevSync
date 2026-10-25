@@ -1,0 +1,61 @@
+{
+  "type": "object",
+  "properties": {
+    "eventId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "originalEvent": {
+      "oneOf": [
+        {
+          "$ref": "urn:devsync:event:index-requested:v1"
+        },
+        {
+          "$ref": "urn:devsync:event:analysis-requested:v1"
+        },
+        {
+          "$ref": "urn:devsync:event:test-requested:v1"
+        },
+        {
+          "$ref": "urn:devsync:event:pull-request-requested:v1"
+        },
+        {
+          "$ref": "urn:devsync:event:cleanup-requested:v1"
+        },
+        {
+          "$ref": "urn:devsync:event:job-completed:v1"
+        },
+        {
+          "$ref": "urn:devsync:event:job-failed:v1"
+        }
+      ]
+    },
+    "attempts": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3
+    },
+    "errorCode": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9_]{1,79}$"
+    },
+    "nextAttemptAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "eventId",
+    "originalEvent",
+    "attempts",
+    "errorCode",
+    "nextAttemptAt"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:devsync:event:retry-dead-letter:v1",
+  "title": "Retry/dead-letter envelope"
+}

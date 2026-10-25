@@ -1,0 +1,20 @@
+{
+  "eventId": "11111111-1111-4111-8111-111111111111",
+  "originalEvent": {
+    "eventId": "11111111-1111-4111-8111-111111111111",
+    "schemaVersion": 1,
+    "occurredAt": "2026-10-25T00:00:00Z",
+    "workspaceId": "11111111-1111-4111-8111-111111111111",
+    "projectId": "11111111-1111-4111-8111-111111111111",
+    "jobId": "11111111-1111-4111-8111-111111111111",
+    "traceparent": "00-11111111111111111111111111111111-2222222222222222-01",
+    "eventType": "devsync.index.requested.v1",
+    "payload": {
+      "generationId": "11111111-1111-4111-8111-111111111111",
+      "commitSha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "attempts": 3,
+  "errorCode": "DEPENDENCY_UNAVAILABLE",
+  "nextAttemptAt": null
+}

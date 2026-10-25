@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "generationId": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uuid"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "NOT_INDEXED",
+        "BUILDING",
+        "READY",
+        "FAILED"
+      ]
+    },
+    "commitSha": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "generationId",
+    "status",
+    "commitSha"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:devsync:tool-output:get_index_status:v1",
+  "title": "get_index_status normalized result"
+}

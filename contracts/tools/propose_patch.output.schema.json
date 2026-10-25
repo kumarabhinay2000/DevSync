@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "proposalId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "patchHash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "baseCommitSha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40,64}$"
+    }
+  },
+  "required": [
+    "proposalId",
+    "patchHash",
+    "baseCommitSha"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:devsync:tool-output:propose_patch:v1",
+  "title": "propose_patch normalized result"
+}

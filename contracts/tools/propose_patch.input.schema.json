@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "properties": {
+    "baseCommitSha": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40,64}$"
+    },
+    "diff": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200000
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    }
+  },
+  "required": [
+    "baseCommitSha",
+    "diff",
+    "summary"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:devsync:tool:propose_patch:v1",
+  "title": "propose_patch"
+}

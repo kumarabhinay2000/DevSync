@@ -1,0 +1,116 @@
+syntax = "proto3";
+package devsync.ai.v1;
+
+option java_multiple_files = true;
+option java_package = "com.devsync.contracts.ai.v1";
+
+// Private services. TLS/service identity and a validated signed execution
+// context are required; plain workspace/project identifiers grant no authority.
+service AiService {
+  rpc AnswerQuestion(AnswerQuestionRequest) returns (AnswerQuestionResponse);
+  rpc ValidateIndex(ValidateIndexRequest) returns (ValidateIndexResponse);
+}
+
+// Implemented by Spring Boot; workers cannot mutate arbitrary application state.
+service JobProgressService {
+  rpc ClaimJob(ClaimJobRequest) returns (ClaimJobResponse);
+  rpc RenewJobLease(RenewJobLeaseRequest) returns (RenewJobLeaseResponse);
+  rpc ReportJobProgress(ReportJobProgressRequest) returns (ReportJobProgressResponse);
+  rpc CompleteIndex(CompleteIndexRequest) returns (CompleteIndexResponse);
+}
+
+message ExecutionScope {
+  string workspace_id = 1;
+  string project_id = 2;
+  string generation_id = 3;
+  string signed_execution_context = 4; // Redact from logs; validate scope/expiry/audience.
+}
+message AnswerQuestionRequest {
+  ExecutionScope scope = 1;
+  string question = 2;
+  string conversation_id = 3;
+  string request_id = 4;
+  // History is loaded through authorized server-side access, not arbitrary roles supplied by a client.
+}
+message Citation {
+  string chunk_id = 1;
+  string path = 2;
+  string commit_sha = 3;
+  uint32 start_line = 4;
+  uint32 end_line = 5;
+}
+message AnswerQuestionResponse {
+  string answer = 1;
+  repeated Citation citations = 2;
+  string generation_id = 3;
+  bool insufficient_context = 4;
+  string request_id = 5;
+}
+message ValidateIndexRequest {
+  ExecutionScope scope = 1;
+  uint64 expected_files = 2;
+  uint64 expected_chunks = 3;
+  string commit_sha = 4;
+}
+message ValidateIndexResponse {
+  bool valid = 1;
+  repeated string sanitized_errors = 2;
+}
+enum JobState {
+  JOB_STATE_UNSPECIFIED = 0;
+  JOB_STATE_QUEUED = 1;
+  JOB_STATE_RUNNING = 2;
+  JOB_STATE_SUCCEEDED = 3;
+  JOB_STATE_FAILED = 4;
+  JOB_STATE_CANCELLED = 5;
+}
+message ReportJobProgressRequest {
+  string job_id = 1;
+  string attempt_token = 2; // Secret lease capability; redact from all logs.
+  uint64 sequence = 3;
+  JobState state = 4; // INDEX success must use CompleteIndex, never bypass validation here.
+  string stage = 5;
+  string sanitized_error_code = 6;
+}
+message ReportJobProgressResponse {
+  bool accepted = 1;
+  bool cancellation_requested = 2;
+  JobState current_state = 3;
+}
+message ClaimJobRequest {
+  string job_id = 1;
+  string event_id = 2;
+  string worker_instance_id = 3;
+}
+message ClaimJobResponse {
+  bool claimed = 1;
+  string attempt_token = 2; // Redact. Store only hash server-side.
+  uint32 attempt = 3;
+  uint64 lease_expires_at_unix_seconds = 4;
+  ExecutionScope scope = 5;
+  bool cancellation_requested = 6;
+}
+message RenewJobLeaseRequest {
+  string job_id = 1;
+  string attempt_token = 2;
+}
+message RenewJobLeaseResponse {
+  bool renewed = 1;
+  uint64 lease_expires_at_unix_seconds = 2;
+  bool cancellation_requested = 3;
+  string refreshed_execution_context = 4;
+}
+message CompleteIndexRequest {
+  string job_id = 1;
+  string attempt_token = 2;
+  string generation_id = 3;
+  string commit_sha = 4;
+  uint64 file_count = 5;
+  uint64 chunk_count = 6;
+}
+message CompleteIndexResponse {
+  bool accepted = 1;
+  bool activated = 2;
+  JobState current_state = 3;
+  string sanitized_reason_code = 4;
+}

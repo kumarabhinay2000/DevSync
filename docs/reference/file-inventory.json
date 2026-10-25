@@ -1,0 +1,357 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 289,
+    "sha256": "c71769a2354628ac394d1e12c0b74f46c1fbce6d3cdf416ab710864b22dfc88f"
+  },
+  {
+    "path": "contracts/events/analysis-requested.v1.schema.json",
+    "bytes": 1415,
+    "sha256": "70e813ca4564b14c9e313352b3d73326994318e84239978ec5b82e6094d6f3e0"
+  },
+  {
+    "path": "contracts/events/cleanup-requested.v1.schema.json",
+    "bytes": 1324,
+    "sha256": "a38cef635b465a45ef33f325bad45cd2a8411b53e11844c7fb9d1db7a1705644"
+  },
+  {
+    "path": "contracts/events/index-requested.v1.schema.json",
+    "bytes": 1451,
+    "sha256": "efa7f6cd93f850b045347e98b7e8b37f8a7957731eeeb120d55dc98ccc212f09"
+  },
+  {
+    "path": "contracts/events/job-completed.v1.schema.json",
+    "bytes": 1607,
+    "sha256": "53686aebbe4406a15fbbfb5c6e9d8d12b188bf94c6ec89c4ee440073450bae1b"
+  },
+  {
+    "path": "contracts/events/job-failed.v1.schema.json",
+    "bytes": 1455,
+    "sha256": "2cf29ae97d764bdd86338f87ba7788fd3b7e612d2bb7c4b11f12a3ed2aa2aef3"
+  },
+  {
+    "path": "contracts/events/pull-request-requested.v1.schema.json",
+    "bytes": 1456,
+    "sha256": "ac52aa5797bb43ef57b2d40f3304e2454d5a3ece32f3dfc13c03edefb757eac0"
+  },
+  {
+    "path": "contracts/events/retry-dead-letter.v1.schema.json",
+    "bytes": 1374,
+    "sha256": "5ffc1f1612cde85b9075518c0af079dc611d74c76f33251c99853170b4763336"
+  },
+  {
+    "path": "contracts/events/test-requested.v1.schema.json",
+    "bytes": 1465,
+    "sha256": "129b6eb0027f8d2101c53fcfcb3c3698f87a83ad7d4694a28718bafa01d923c0"
+  },
+  {
+    "path": "contracts/examples/analysis-requested.json",
+    "bytes": 524,
+    "sha256": "0a9063de3c6e4144778226b30a6a49cde79270732b14d29560ecdf804ce5365a"
+  },
+  {
+    "path": "contracts/examples/cleanup-requested.json",
+    "bytes": 494,
+    "sha256": "0bd7e9cb4448a66a04bd77fe07a0bfdbb248d5af9aeaa929202a1949545f9325"
+  },
+  {
+    "path": "contracts/examples/index-requested.json",
+    "bytes": 556,
+    "sha256": "a5096999f1c0837179b516ab58af8744f5838b0854e56aee845fc2d2847b4dae"
+  },
+  {
+    "path": "contracts/examples/job-completed.json",
+    "bytes": 521,
+    "sha256": "21756f69c984a44378592f3bd5af38b31ff1a5c891acda4488899df37336de8f"
+  },
+  {
+    "path": "contracts/examples/job-failed.json",
+    "bytes": 492,
+    "sha256": "dce50191ea0e7bb60646ba6ce31b94cd99b4887837399edd193f13f86d767678"
+  },
+  {
+    "path": "contracts/examples/pull-request-requested.json",
+    "bytes": 558,
+    "sha256": "5b8c9d2d496bc908fe15b47077efa5e8b6b8014925cb0a607833bc852310435d"
+  },
+  {
+    "path": "contracts/examples/retry-dead-letter.json",
+    "bytes": 747,
+    "sha256": "c3ac21dde8677748aa21249781767cde458f9e9a06d4827d5a1b89e79c9a1fec"
+  },
+  {
+    "path": "contracts/examples/test-requested.json",
+    "bytes": 526,
+    "sha256": "ec57c0b22582efb122a72f37fc90d361313d4d61e25c8dc1be642c13dae8e565"
+  },
+  {
+    "path": "contracts/openapi.json",
+    "bytes": 320720,
+    "sha256": "48807cb202389c8900aca1a339a8e0137352c1b5b51bb98fe34be50b8d2cf0f2"
+  },
+  {
+    "path": "contracts/proto/devsync/ai/v1/ai.proto",
+    "bytes": 3410,
+    "sha256": "7c46f0752e828c25bbcfec6d815e48d91e59aecdde7ef978e2fd5ff05c6db80f"
+  },
+  {
+    "path": "contracts/README.md",
+    "bytes": 4208,
+    "sha256": "e2582e678c89008509386fa8b583acf0d5b98ac5e41ed6c6903a38831b1e8005"
+  },
+  {
+    "path": "contracts/tools/create_pull_request.input.schema.json",
+    "bytes": 450,
+    "sha256": "82370ecd4c15a090334a85934c189c91d5d6a48ee80c38e1468d5017c33e7b4f"
+  },
+  {
+    "path": "contracts/tools/create_pull_request.output.schema.json",
+    "bytes": 640,
+    "sha256": "62f34418a85aa9c2ff528be042193e8834fa3e46ee57d144b3e109acae656d7d"
+  },
+  {
+    "path": "contracts/tools/get_index_status.input.schema.json",
+    "bytes": 244,
+    "sha256": "f8336066829a7711a7b416accc0512a3c8ac08b978e561649c82751706cc32e0"
+  },
+  {
+    "path": "contracts/tools/get_index_status.output.schema.json",
+    "bytes": 692,
+    "sha256": "5489d236dd2115cbabd9852a9f7a80b675a579d38ccb1b6b7c3326f09c207142"
+  },
+  {
+    "path": "contracts/tools/get_quality_findings.input.schema.json",
+    "bytes": 497,
+    "sha256": "95591a8282f19a7aab411270739bf92d69475a5c11a012c722511c5b11580e12"
+  },
+  {
+    "path": "contracts/tools/get_quality_findings.output.schema.json",
+    "bytes": 1346,
+    "sha256": "06d158c2e3b5947d7e8a5a8ab471d83004854ac1d78a6bac01cebb38fc615008"
+  },
+  {
+    "path": "contracts/tools/propose_patch.input.schema.json",
+    "bytes": 587,
+    "sha256": "59ac719b98d264494106dde1e0d8a0a549585d4ae3b7206201532c0b6714c120"
+  },
+  {
+    "path": "contracts/tools/propose_patch.output.schema.json",
+    "bytes": 589,
+    "sha256": "b3eecc42f68c251ca2e9f3a9a051d6b6a31fbe22da2f3643c4e0a9aa580a92d8"
+  },
+  {
+    "path": "contracts/tools/read_source_range.input.schema.json",
+    "bytes": 541,
+    "sha256": "6e932f09c2b24b8a208667056a61dfa70b8a58f4288f14ac49ef466a0633a003"
+  },
+  {
+    "path": "contracts/tools/read_source_range.output.schema.json",
+    "bytes": 751,
+    "sha256": "9354a1112cc92e965d2fd3b2458f2b5c3b2fb6546d8e8acfadb894f8e65a0c28"
+  },
+  {
+    "path": "contracts/tools/run_tests.input.schema.json",
+    "bytes": 459,
+    "sha256": "c7fb96fd4cecafaf7e44fb9d888a513113414f09b1dee8694e529955af60edfa"
+  },
+  {
+    "path": "contracts/tools/run_tests.output.schema.json",
+    "bytes": 413,
+    "sha256": "d1dca615ea5a5c5620083319c787e4b4bc0cfa3921910b90d990aa7ce61b1ba0"
+  },
+  {
+    "path": "contracts/tools/search_code.input.schema.json",
+    "bytes": 442,
+    "sha256": "f711072d00fd7908b91df00b7af5fcb1b0fed9cbba07acce71ff9e2141247b5b"
+  },
+  {
+    "path": "contracts/tools/search_code.output.schema.json",
+    "bytes": 1245,
+    "sha256": "a4db65cd594ac1743da536d3a46266a84aa6748a90199f2eea0360e814f14ea9"
+  },
+  {
+    "path": "docs/01-product-requirements.md",
+    "bytes": 4914,
+    "sha256": "d2b3c1be4f1efd7c36a75c1046b00ba023928a66d4184b96a4622af35bc15ff9"
+  },
+  {
+    "path": "docs/02-system-architecture.md",
+    "bytes": 5401,
+    "sha256": "6b533c4fc3a4987adeb544130d03abd589b8e61f5e106f247c5c0e92540f5c60"
+  },
+  {
+    "path": "docs/03-database-design.md",
+    "bytes": 5147,
+    "sha256": "c4fcc126c74ad1b4800a1db0298f30ad6647b561f2efdf07f8552fa050081541"
+  },
+  {
+    "path": "docs/04-api-and-event-contracts.md",
+    "bytes": 5316,
+    "sha256": "5add4a84c2fd05d496e3b89e3438a0390e073a4539e01add6683673aa27c196c"
+  },
+  {
+    "path": "docs/05-implementation-roadmap.md",
+    "bytes": 3284,
+    "sha256": "7e4425e4d9c7709e0cb42affd945512b8ec1c6eee9ac32aa247ac6dab54c7e0b"
+  },
+  {
+    "path": "docs/06-testing-and-quality.md",
+    "bytes": 2992,
+    "sha256": "c74db6f79b50bd715bedfe47948611a409a36fe1bee47fc9d9073f50294f0e35"
+  },
+  {
+    "path": "docs/07-security-and-access.md",
+    "bytes": 3374,
+    "sha256": "db5b55e3efeee25979384f4bcb737638b75a25f523a12ea76683f43ac5211e05"
+  },
+  {
+    "path": "docs/08-deployment-and-operations.md",
+    "bytes": 4075,
+    "sha256": "2bfebda8488f7da2dc5741e720163b4bb48f074876cecd2127908ebb2b4d3b7c"
+  },
+  {
+    "path": "docs/09-decisions-and-open-questions.md",
+    "bytes": 3573,
+    "sha256": "c479a8614d0b202ab6f69754b379ab3f88ac3343860c47e11c8ab1afc802c994"
+  },
+  {
+    "path": "docs/10-ui-ux-specification.md",
+    "bytes": 4107,
+    "sha256": "0218cbffc231f4cdbed7f62b36e7e53731895fd86ef98d4dd5546341823929d3"
+  },
+  {
+    "path": "docs/11-permissions-and-threat-model.md",
+    "bytes": 3923,
+    "sha256": "bddb0be0060fe52bfa5d86d2feb4dc898ee00bb819cce349cb5bc50e6742e207"
+  },
+  {
+    "path": "docs/12-database-er-and-data-lifecycle.md",
+    "bytes": 3396,
+    "sha256": "da836c646be1d5e8bc05fb0a9f87e8a20453b4aba7711dabb269a9371724845e"
+  },
+  {
+    "path": "docs/13-developer-onboarding.md",
+    "bytes": 3558,
+    "sha256": "3d92f5d9e082cf807e9d090a4dc8a6a5db71486350bc208ea1ad726e53210d0e"
+  },
+  {
+    "path": "docs/14-operations-runbooks.md",
+    "bytes": 3940,
+    "sha256": "99760965e389a95e9bd70608e933ac6bb2efffba7ee0bc5c405560742c15d489"
+  },
+  {
+    "path": "docs/15-user-guide.md",
+    "bytes": 2286,
+    "sha256": "df557e5e461d3e6ae3bf1813effd390ef2254fb6653019bc224fa16f8892d8a9"
+  },
+  {
+    "path": "docs/16-requirements-traceability.md",
+    "bytes": 2363,
+    "sha256": "09c19a6abe010f3a72603ebe525f884c3b109973043b2e12cbb25dfbe399bc17"
+  },
+  {
+    "path": "docs/17-documentation-status.md",
+    "bytes": 3766,
+    "sha256": "95d28395b8c1b0ef3e8edf8697fc6c182afa48a3a0bb35b3a0c30be5a2bba6d3"
+  },
+  {
+    "path": "docs/18-baseline-decisions-and-limits.md",
+    "bytes": 7761,
+    "sha256": "a26596a225fe323ea30d2ccd11fe0743b94b140adf5552224246f6be605daf5f"
+  },
+  {
+    "path": "docs/19-detailed-workflows-and-state-machines.md",
+    "bytes": 4761,
+    "sha256": "862c6ffb34b73cc31b24f2ce8243ec64dd014b454bbd426889e7924edc48126a"
+  },
+  {
+    "path": "docs/20-ai-retrieval-tools-and-mcp.md",
+    "bytes": 6510,
+    "sha256": "d7f6d006831b4f07150b1334ece5176603b3059c4058156be83263d845f95212"
+  },
+  {
+    "path": "docs/21-delivery-observability-and-recovery.md",
+    "bytes": 5823,
+    "sha256": "b9ecd8bac5c2e7a0705f5f28b3877abe54c9ee6858aa1e70122bbffc05f8fa6e"
+  },
+  {
+    "path": "docs/22-test-cases-and-evaluation-catalog.md",
+    "bytes": 5673,
+    "sha256": "43330eeeb6171cc56949f9a7985055cbbfd79ca456d64871b436cb58001ced9b"
+  },
+  {
+    "path": "docs/23-engineering-governance-and-backlog.md",
+    "bytes": 4612,
+    "sha256": "92e5958fa68798cd97bf71427e1e3dc554b12e532101b72190319ca381b7d7b0"
+  },
+  {
+    "path": "docs/24-database-reference-and-migrations.md",
+    "bytes": 4291,
+    "sha256": "1f1a72f0e58d9c27cc63e25f0bc86734b10b5795648ae798dba5f7664ec247f1"
+  },
+  {
+    "path": "docs/25-api-semantics-and-errors.md",
+    "bytes": 7871,
+    "sha256": "f279a19332a22167ad1134a5ccc96529c4c30398e7ebef47957c2cbb7ce0701a"
+  },
+  {
+    "path": "docs/26-ui-design-system-and-wireframes.md",
+    "bytes": 3189,
+    "sha256": "a979479038b0adcabef92abfbe55878615621f5e64483b742c1235c2d220ef8e"
+  },
+  {
+    "path": "docs/27-configuration-and-toolchain.md",
+    "bytes": 4230,
+    "sha256": "e550927c3a38c51758c39f1edfdbbcdc29dab4a101f690c5ec732216859d1548"
+  },
+  {
+    "path": "docs/28-data-privacy-cost-and-support.md",
+    "bytes": 3005,
+    "sha256": "b6e11729f47ec62127599850c33f41db62b797689037be9b728d79587c858e8d"
+  },
+  {
+    "path": "docs/README.md",
+    "bytes": 5049,
+    "sha256": "65c7ec56ac7778b14202cb9081dee2697be726637573fd2607d4d7593ac8546d"
+  },
+  {
+    "path": "docs/reference/environment.example",
+    "bytes": 1780,
+    "sha256": "7283ce2efce12cd4fbbcad3906dacbf9b0975c8ec88fdef4cc7121f6f3944b09"
+  },
+  {
+    "path": "docs/reference/schema.sql",
+    "bytes": 17042,
+    "sha256": "4ca7f0b3345f758953241e8ae7b3c28bb1127128aa0ab27bf37dc06c2088cd7a"
+  },
+  {
+    "path": "docs/wireframes/chat.svg",
+    "bytes": 3302,
+    "sha256": "85bb4cd8934ba8a6b780217937b574c361d03847335668e4632db5ecee7a1ceb"
+  },
+  {
+    "path": "docs/wireframes/dashboard.svg",
+    "bytes": 3634,
+    "sha256": "b21f7806bf2a235c956af751810fa106dc0ff85b6bc60e88d15a0cbf38640779"
+  },
+  {
+    "path": "docs/wireframes/review.svg",
+    "bytes": 3490,
+    "sha256": "ccd3e9dee68ea2fb75d378340e96c0762c4551a4886241c30dc8bdf69c5e6334"
+  },
+  {
+    "path": "README.md",
+    "bytes": 1390,
+    "sha256": "0219a168bb16f57678921881ff866edaad7d0f09a40bb9f0d330627a1a7fb85b"
+  },
+  {
+    "path": "scripts/requirements-docs.txt",
+    "bytes": 154,
+    "sha256": "27cb65fa0b8076efbd84ac343d93659dc3335af015afc070df141940645c9402"
+  },
+  {
+    "path": "scripts/validate_documentation.py",
+    "bytes": 9314,
+    "sha256": "5dcdc223fc755b1f625ef2bd7ff994c9b21e60c90e37c479d526d7b5c5807339"
+  }
+]
